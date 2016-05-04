@@ -16,17 +16,26 @@ public class StackTest {
 	}
 	@Test 
 	public void agregaValor(){
+		int v=1;
 		Stack pila= new Stack();
-		pila.agregar();
+		pila.agregar(v);
 		boolean r= pila.stackVacio();
 		assertFalse(r);		
 	}
+	@Test
 	public void agregaDosValores(){
 		Stack pila= new Stack();
-		pila.agregar();
-		pila.agregar();
+		pila.agregar(1);
+		pila.agregar(2);
 		boolean r= pila.stackVacio();
 		assertFalse(r);		
 	}
-
+	@Test
+	public void StackEsDos(){
+		Stack pila= new Stack();
+		pila.agregar(1);
+		pila.agregar(2);
+		int v=pila.cont;
+		assertThat(v,is(2));
+	}
 }
