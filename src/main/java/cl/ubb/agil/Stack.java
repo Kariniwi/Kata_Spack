@@ -13,10 +13,12 @@ public class Stack {
 		}
 	}
 
-	public void agregar(int x){
+	public int agregar(int x){
 		for(int i=0; i<2; i++){			
-			arr[i]=x;		
+			arr[i]=x;	
 		}
 		cont++;
+		return 1;
+		
 	}
 }

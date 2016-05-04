@@ -38,4 +38,10 @@ public class StackTest {
 		int v=pila.cont;
 		assertThat(v,is(2));
 	}
+	@Test
+	public void retornaUno(){
+		Stack pila= new Stack();
+		int v=pila.agregar(1);
+		assertThat(v,is(1));
+	}
 }
