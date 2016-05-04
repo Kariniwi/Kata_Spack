@@ -6,12 +6,20 @@ import static org.junit.Assert.assertFalse;
 import static org.hamcrest.CoreMatchers.is;
 
 public class StackTest {
+	
 	@Test 
 	public void creaStackVacio(){
 		Stack pila= new Stack();
 		boolean r;
 		r=pila.stackVacio();
-		assertTrue(r);
+		assertTrue(r);		
+	}
+	@Test 
+	public void agregaValor(){
+		Stack pila= new Stack();
+		pila.agregar();
+		boolean r= pila.stackVacio();
+		assertFalse(r);
 		
 		
 	}
