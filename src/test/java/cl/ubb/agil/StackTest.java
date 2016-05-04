@@ -19,9 +19,14 @@ public class StackTest {
 		Stack pila= new Stack();
 		pila.agregar();
 		boolean r= pila.stackVacio();
-		assertFalse(r);
-		
-		
+		assertFalse(r);		
+	}
+	public void agregaDosValores(){
+		Stack pila= new Stack();
+		pila.agregar();
+		pila.agregar();
+		boolean r= pila.stackVacio();
+		assertFalse(r);		
 	}
 
 }
