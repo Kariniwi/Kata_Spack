@@ -18,7 +18,6 @@ public class Stack {
 			arr[i]=x;	
 		}
 		cont++;
-		return 1;
-		
+		return cont;
 	}
 }

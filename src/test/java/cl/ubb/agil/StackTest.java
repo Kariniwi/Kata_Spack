@@ -44,4 +44,11 @@ public class StackTest {
 		int v=pila.agregar(1);
 		assertThat(v,is(1));
 	}
+	@Test
+	public void retornaDos(){
+		Stack pila= new Stack();
+		pila.agregar(1);
+		int v=pila.agregar(2);
+		assertThat(v,is(2));
+	}
 }
